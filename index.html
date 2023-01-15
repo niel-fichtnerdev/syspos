@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>syspos</title>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/break-points.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="img-box">
+                   <img src="img/syspos_small.png" alt="logo">  
+                </div>
+                <div class="time-container">
+                    <span id="time"></span>
+                </div>
+
+                <script>
+                    function refreshTime() {
+                    const timeDisplay = document.getElementById("time");
+                    const dateString = new Date().toLocaleString();
+                    const formattedString = dateString.replace(", ", " - ");
+                    timeDisplay.textContent = formattedString;
+                }
+                    setInterval(refreshTime, 1000);
+                </script>
+
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="#">&#9750 Home</a></li>
+                        <li><a href="#">&#9872 Products</a></li>
+                        <li><a href="#">&#9736 Sales</a></li>  
+                    </ul>
+
+                </div>
+
+                <div class="profile">
+                    <a href="#" ><img src="img/profile-icon.png" alt="profile"></a> 
+                </div>
+
+                <div class="menu-bar-container">
+                        <div class="open-slide">
+                            <a href="#" onclick="openSlideMenu()">
+                                &#9776;
+                            </a>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="content-head-container">
+            <div class="content-head">
+                <p>Welcome, have a nice day ahead</p>
+                <div class="notification">
+                    <p>You have <strong>2</strong> pending orders</p>
+                    <a href="#"><button class="view-order">view orders</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-body">
+            <div class="wra">
+                
+            </div>
+            <div class="product-type">
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>
+                <div class="product-type-list">
+                    <a href=""><p>Super Meals</p></a>
+                </div>  
+
+            </div>
+            <div class="order-list-container">
+                <div class="order-title">
+                    <p>Order List</p>
+                </div>
+                <div class="order-list">
+                    <ul>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Msdsdsdsdssdsdsdsddsdeals</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Measdsdsdls</a></li>
+                        <li><a href="">Super Mesdsdals</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Mealssdsds</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Msdsdsdsdeals</a></li>
+                        <li><a href="">Super Mealssdsdsd</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Mealssdsds</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Meadsdsdsdsdsdsdls</a></li>
+                        <li><a href="">Super Meals</a></li>
+                        <li><a href="">Super Measdsdsdsdsdsdsdsddls</a></li>
+                        <li><a href="">Super Meals</a></li>
+
+
+    
+
+                    </ul>
+                </div>
+                <div class="order-summary">
+                    <p>Order Total</p>
+                    <span>Php 0.00</span>
+                    <a href="#"><button class="btn-settle">Settle</button></a>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <footer class="footer-container">
+            <div class="footer-text">
+                <p>&copy; Copyright 2023 SYSPOS All rights reserved | Developed by Niel Fichtner</p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

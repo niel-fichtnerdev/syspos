@@ -1,0 +1,310 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color:#fff;
+}
+body::-webkit-scrollbar{
+    
+        display: none;
+    
+    
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(43, 38, 61);
+}
+
+.header .container{
+    display: flex;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.header .container .img-box{
+    display: flex;
+    padding: 5px;
+  
+
+}
+
+.header .container .img-box img{
+    transform: scale(0.8);
+}
+
+.header .container .menu-container{
+    display: flex;
+    align-items: center;
+    width: 400x;
+}
+
+.header .container .menu-container ul{
+    list-style: none;
+    text-align: center;
+    width: 500px;
+    display: inline;
+
+}
+
+.header .container .menu-container ul li{
+    display: inline;
+    padding: 16px;
+}
+.header .container .menu-container ul li:hover{
+    background-color: rgb(250, 207, 65);
+
+
+}
+
+.header .container .menu-container ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .container .menu-container ul li a:hover{
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.header .container .profile{
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(0.6);
+    display: flex;
+}
+
+.header .container .profile a{
+    transform: scale(0.7);
+    display: flex;
+}
+.header .container .menu-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .menu-bar-container a{
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.header .container .time-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .container .time-container span{
+    font-size: 14px;
+}
+.content-head-container{
+    display: flex;
+    height: 60px;
+    padding: 20px;
+    background: rgb(139, 141, 248);
+
+}
+.content-head-container .content-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-head-container .content-head .notification{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content-head-container .content-head .notification .view-order{
+    padding: 10px;
+    background-color: rgb(54, 79, 218);
+    outline: 0;
+    border: none;
+    border-radius: 15px;
+}
+.content-head-container .content-head .notification .view-order:hover{
+    letter-spacing: 1px;
+    background-color: rgb(34, 55, 173);
+}
+.main-body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    background: rgb(139, 141, 248);
+    gap: 10px;
+    flex-direction: row;
+}
+
+
+.main-body .product-type{
+    display: flex;
+    padding: 20px 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 65%;
+    height: 80%;
+    flex-wrap: row wrap;
+    gap: 5px;
+    background-color: rgb(179, 236, 229);
+    border-radius: 5px;
+    overflow: auto;
+    
+}
+.main-body .product-type .product-type-list{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    flex-basis: 90%; 
+    margin: 10px;
+
+}
+.main-body .product-type .product-type-list a{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.main-body .product-type .product-type-list p{
+    padding: 10px;
+}
+.main-body .product-type .product-type-list p:hover{
+    color: rgb(219, 208, 51);
+    font-weight: 1000;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.main-body .order-list-container{
+    width: 500px;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 231, 111);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+.main-body .order-list-container .order-list{
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    justify-content: center;
+    height: 65%;
+}
+.main-body .order-list-container .order-list::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+    width: 2px;
+}
+.main-body .order-list-container .order-list::-webkit-scrollbar-track{
+    	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.main-body .order-list-container .order-list ul{
+    list-style-type: none;
+}
+.main-body .order-list-container .order-list ul li::before{
+    content: "\22B3";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(66, 86, 197); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.main-body .order-list-container .order-list ul li a{
+    text-decoration: none;
+    color: rgb(66, 86, 197);
+    font-weight: 600;
+}
+.main-body .order-list-container .order-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.main-body .order-list-container .order-title p{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(24, 40, 44);
+}
+.main-body .order-list-container .order-summary{
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body .order-list-container .order-summary p{
+    color: rgb(26, 21, 21);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.main-body .order-list-container .order-summary span{
+    color: green;
+    font-weight: 600;
+}
+.main-body .order-list-container .order-summary .btn-settle{
+    background-color: rgb(54, 79, 218);
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 6px;
+    transform: translateY(5px);
+}
+.main-body .order-list-container .order-summary .btn-settle:hover{
+    letter-spacing: 1px;
+    background-color: rgb(34, 55, 173);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container{
+    background-color: black;
+    height: 60px auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px
+
+}
+.footer-container .footer-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-container .footer-text p{
+    color: #fff;
+    font-size: 12px;
+}
